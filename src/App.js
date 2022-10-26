@@ -1,4 +1,6 @@
 import { exsamples } from './exsamples'
+//import Menu from './practice/Menu'
+
 import { useState } from 'react'
 
 function App() {
@@ -20,10 +22,10 @@ function App() {
       })}
     </select>
   )
-
   const MyComponent = exsamples[displayIndex].component
   return (
     <>
+      {/* <Menu /> */}
       {selection}
       <hr />
       <MyComponent />
