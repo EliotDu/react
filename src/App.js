@@ -1,12 +1,32 @@
-//引入
-//import Counter from './ex-1025-2/Counter'
-import JsxValue from './ex-1026-1/JsxValue'
+import { exsamples } from './exsamples'
+import { useState } from 'react'
 
 function App() {
-  //return後面要加小括號
+  const [displayIndex, setDisplayIndex] = useState(0)
+
+  const selection = (
+    <select
+      value={displayIndex}
+      onChange={(e) => {
+        setDisplayIndex(Number(e.target.value))
+      }}
+    >
+      {exsamples.map((value, index) => {
+        return (
+          <option key={index} value={index}>
+            {value.name}
+          </option>
+        )
+      })}
+    </select>
+  )
+
+  const MyComponent = exsamples[displayIndex].component
   return (
     <>
-      <JsxValue />
+      {selection}
+      <hr />
+      <MyComponent />
     </>
   )
 }

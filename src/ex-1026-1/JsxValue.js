@@ -25,7 +25,7 @@ function JsxValue() {
       {/* {會有中斷錯誤} */}
       {/* {{ a: 1, b: 2 }} */}
       <h2>Function</h2>
-      {function(){}}
+      {() => {}}
     </>
   )
 }
