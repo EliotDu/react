@@ -1,5 +1,5 @@
 //部分導入要使用{}
-import { data } from './data/student'
+//import { data } from './data/student'
 //JSON檔案導入時會自動轉成js的資料類型值
 import jsonData from './data/student.json'
 
@@ -17,7 +17,7 @@ function StudentList() {
             3.資料為靜態資料(意指在應用程式中完全不會更動)時，
             才能使用索引值當key值
         */}
-        {data.map((value, index, array) => {
+        {jsonData.map((value, index, array) => {
           return <li key={value.id}>{value.name}</li>
         })}
       </ul>

@@ -1,6 +1,4 @@
 import { exsamples } from './exsamples'
-//import Menu from './practice/Menu'
-
 import { useState } from 'react'
 
 function App() {
@@ -10,6 +8,7 @@ function App() {
     <select
       value={displayIndex}
       onChange={(e) => {
+        //注意要轉型資料型態，保持state資料型態一致
         setDisplayIndex(Number(e.target.value))
       }}
     >
@@ -25,8 +24,8 @@ function App() {
   const MyComponent = exsamples[displayIndex].component
   return (
     <>
-      {/* <Menu /> */}
       {selection}
+      <p>元件檔案路徑: {exsamples[displayIndex].path}</p>
       <hr />
       <MyComponent />
     </>
