@@ -6,6 +6,7 @@ function Counter() {
   return (
     <>
       <h1>{total}</h1>
+
       <button
         className="btn"
         onClick={() => {

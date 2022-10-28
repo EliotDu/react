@@ -6,6 +6,8 @@ import Menu from './practice/Menu'
 import Parent from './ex-1027-1/Parent'
 import ParentPropTypes from './ex-1027-2/Parent'
 import ParentDataFlow from './ex-1027-3/Parent'
+import ParentTest from './ex-1027-3/ParentTest'
+import InputDemo from './ex-1028-1/InputDemo'
 export const exsamples = [
   {
     name: '1025-1 計數器',
@@ -46,5 +48,15 @@ export const exsamples = [
     name: '1027-3  DataFlow 三種資料流',
     path: './ex-1027-3/Parent',
     component: ParentDataFlow,
+  },
+  {
+    name: '1027-4  DataFlow 三種資料流(測試)',
+    path: './ex-1027-3/ParentTest',
+    component: ParentTest,
+  },
+  {
+    name: '1028-1  可控與不可控表單元件',
+    path: './ex-1028-1/InputDemo',
+    component: InputDemo,
   },
 ]

@@ -2,6 +2,7 @@ import { exsamples } from './exsamples'
 import { useState } from 'react'
 
 function App() {
+  //記錄選項中的索引值，資料為數字資料型態
   const [displayIndex, setDisplayIndex] = useState(0)
 
   const selection = (
@@ -21,6 +22,7 @@ function App() {
       })}
     </select>
   )
+  // 動態元件語法，注意命名開頭英文一定要大寫
   const MyComponent = exsamples[displayIndex].component
   return (
     <>
