@@ -8,6 +8,7 @@ import ParentPropTypes from './ex-1027-2/Parent'
 import ParentDataFlow from './ex-1027-3/Parent'
 import ParentTest from './ex-1027-3/ParentTest'
 import InputDemo from './ex-1028-1/InputDemo'
+import HTML5Form from './ex-1028-2/HTML5Form'
 export const exsamples = [
   {
     name: '1025-1 計數器',
@@ -16,47 +17,52 @@ export const exsamples = [
   },
   {
     name: '1026-1 JSX中的值與表達式',
-    path: './ex-1026-1/JsxValue',
+    path: './ex-1026-1/JsxValue.js',
     component: JsxValue,
   },
   {
     name: '1026-2 學生列表清單(map-key)',
-    path: './ex-1026-2/StudentList',
+    path: './ex-1026-2/StudentList.js',
     component: StudentList,
   },
   {
     name: '1026-3 陣列物件狀態處理練習',
-    path: './ex-1026-3/Demo',
+    path: './ex-1026-3/Demo.js',
     component: Demo,
   },
   {
     name: '1026  選單項目狀態',
-    path: './practice/Menu',
+    path: './practice/Menu.js',
     component: Menu,
   },
   {
     name: '1027-1  props狀態練習',
-    path: './ex-1027-1/Parent',
+    path: './ex-1027-1/Parent.js',
     component: Parent,
   },
   {
     name: '1027-2  propTypes型別檢查',
-    path: './ex-1027-2/Parent',
+    path: './ex-1027-2/Parent.js',
     component: ParentPropTypes,
   },
   {
     name: '1027-3  DataFlow 三種資料流',
-    path: './ex-1027-3/Parent',
+    path: './ex-1027-3/Parent.js',
     component: ParentDataFlow,
   },
   {
     name: '1027-4  DataFlow 三種資料流(測試)',
-    path: './ex-1027-3/ParentTest',
+    path: './ex-1027-3/ParentTest.js',
     component: ParentTest,
   },
   {
     name: '1028-1  可控與不可控表單元件',
-    path: './ex-1028-1/InputDemo',
+    path: './ex-1028-1/InputDemo.js',
     component: InputDemo,
+  },
+  {
+    name: '1028-2  各種可控的表單元件',
+    path: './ex-1028-2/HTML5Form.js',
+    component: HTML5Form,
   },
 ]

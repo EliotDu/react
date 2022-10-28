@@ -1,10 +1,10 @@
 import React, { useRef, useState } from 'react'
-
+import InputById from './InputById'
+import InputByRef from './InputByRef'
 function InputDemo() {
   const [inputText, setInputText] = useState('')
   // ref的原型 {current:null}
-  const inputRef = useRef('')
-
+ 
   return (
     <>
       <h1>可控表單元件</h1>
@@ -24,15 +24,12 @@ function InputDemo() {
       </button>
 
       <hr />
+      <h1>不可控表單元件(id)</h1>
+      <InputById />
+      <InputById />
       <h1>不可控表單元件(ref)</h1>
-      <input type="text" ref={inputRef} />
-      <button
-        onClick={() => {
-          inputRef.current.value = 'eliot@ggg.com'
-        }}
-      >
-        載入資料
-      </button>
+      <InputByRef />
+      <InputByRef />
     </>
   )
 }
