@@ -6,7 +6,7 @@ import TodoList from './TodoList'
 
 function TodoApp() {
   // 編輯用
-  const [inputEditingValue, setInputEditingValue] = useState('')
+  //const [inputEditingValue, setInputEditingValue] = useState('')
 
   const [todos, setTodos] = useState([
     {

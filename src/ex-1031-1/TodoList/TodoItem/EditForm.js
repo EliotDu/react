@@ -1,6 +1,8 @@
 import { useState } from 'react'
 
-function EditForm({ id, updateTodo, inputEditingValue, setInputEditingValue }) {
+function EditForm({ id, updateTodo, text }) {
+  // 使用衍生的props作為state初始值
+  const [inputEditingValue, setInputEditingValue] = useState(text)
   return (
     <>
       <input
