@@ -2,13 +2,16 @@ import Counter from './ex-1025-2/Counter'
 import JsxValue from './ex-1026-1/JsxValue'
 import StudentList from './ex-1026-2/StudentList'
 import Demo from './ex-1026-3/Demo'
-import Menu from './practice/Menu'
+//import Menu from './practice/Menu'
 import Parent from './ex-1027-1/Parent'
 import ParentPropTypes from './ex-1027-2/Parent'
 import ParentDataFlow from './ex-1027-3/Parent'
 import ParentTest from './ex-1027-3/ParentTest'
 import InputDemo from './ex-1028-1/InputDemo'
 import HTML5Form from './ex-1028-2/HTML5Form'
+import Bmi from './practice/Bmi'
+import Age from './practice/Age'
+import TodoApp from './ex-1031-1/Todo.App'
 export const exsamples = [
   {
     name: '1025-1 計數器',
@@ -30,11 +33,11 @@ export const exsamples = [
     path: './ex-1026-3/Demo.js',
     component: Demo,
   },
-  {
-    name: '1026  選單項目狀態',
-    path: './practice/Menu.js',
-    component: Menu,
-  },
+  // {
+  //   name: '1026  選單項目狀態',
+  //   path: './practice/Menu.js',
+  //   component: Menu,
+  // },
   {
     name: '1027-1  props狀態練習',
     path: './ex-1027-1/Parent.js',
@@ -64,5 +67,20 @@ export const exsamples = [
     name: '1028-2  各種可控的表單元件',
     path: './ex-1028-2/HTML5Form.js',
     component: HTML5Form,
+  },
+  {
+    name: '練習 Bmi計算',
+    path: './practice/Bmi.js',
+    component: Bmi,
+  },
+  {
+    name: '練習 出生年月日判斷',
+    path: './practice/Age.js',
+    component: Age,
+  },
+  {
+    name: 'ex-1031-1 Todo待辦事項',
+    path: './ex-1031-1/TodoApp.js',
+    component: TodoApp,
   },
 ]
