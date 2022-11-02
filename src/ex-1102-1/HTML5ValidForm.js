@@ -61,7 +61,7 @@ function HTML5ValidForm() {
         onInvalid={handleFormInvalid}
         onChange={handleFormChange}
       >
-        Account：
+        <label>帳號</label>
         <input
           type="text"
           name="username"
@@ -71,7 +71,7 @@ function HTML5ValidForm() {
         />
         <small>{fieldErrors.username}</small>
         <br />
-        Email :
+        <label>信箱</label>
         <input
           type="email"
           name="email"
@@ -81,8 +81,9 @@ function HTML5ValidForm() {
         />
         <small>{fieldErrors.email}</small>
         <br />
-        Password：
+        <label>密碼</label>
         <input
+          id="password"
           //切換密碼的型態
           type={show ? 'text' : 'password'}
           name="password"

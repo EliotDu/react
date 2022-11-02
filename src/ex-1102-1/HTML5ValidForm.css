@@ -1,4 +1,7 @@
+#password{
+  position: relative;
 
+}
 img,
 svg {
   vertical-align: middle;
@@ -6,4 +9,11 @@ svg {
   width: 24px;
   height: 24px;
   color:lightslategray;
+  position: absolute;
+  left: 180px;
+  top:145px;
+}
+small{
+  margin-left: 5px;
+  color:red
 }

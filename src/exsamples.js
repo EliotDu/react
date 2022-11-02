@@ -14,6 +14,8 @@ import Age from './practice/Age'
 import TodoApp from './ex-1031-1/Todo.App'
 import MultipleInput from './ex-1101-1/MultipleInput'
 import HTML5ValidForm from './ex-1102-1/HTML5ValidForm'
+import Lifecycle from './ex-1102-2/Lifecycle'
+import User from './ex-1102-3/User'
 export const exsamples = [
   {
     name: '1025-1 計數器',
@@ -81,18 +83,28 @@ export const exsamples = [
     component: Age,
   },
   {
-    name: 'ex-1031-1 Todo待辦事項',
+    name: '1031-1 Todo待辦事項',
     path: './ex-1031-1/TodoApp.js',
     component: TodoApp,
   },
   {
-    name: 'ex-1101-1 多個表單元素共用單一state',
+    name: '1101-1 多個表單元素共用單一state',
     path: './ex-1101-1/MultipleInput.js',
     component: MultipleInput,
   },
   {
-    name: 'ex-1102-1 HTML5表單驗證',
+    name: '1102-1 HTML5表單驗證',
     path: './ex-1102-1/HTML5ValidForm.js',
     component: HTML5ValidForm,
+  },
+  {
+    name: '1102-2 生命週期方法',
+    path: './ex-1102-2/Lifecycle.js',
+    component: Lifecycle,
+  },
+  {
+    name: '1102-3 從伺服器載入資料',
+    path: './ex-1102-3/User.js',
+    component: User,
   },
 ]
