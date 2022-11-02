@@ -1,9 +1,15 @@
-import { FaEdit } from 'react-icons/fa'
+//import { FaEdit } from 'react-icons/fa'
 function TodoText({ id, text, toggleTodoEditing, setInputEditingValue }) {
   return (
     <>
-      {text}
-      <button
+      <span
+        onDoubleClick={() => {
+          toggleTodoEditing(id)
+        }}
+      >
+        {text}
+      </span>
+      {/* <button
         onClick={() => {
           // 切換編輯state
           toggleTodoEditing(id)
@@ -12,7 +18,7 @@ function TodoText({ id, text, toggleTodoEditing, setInputEditingValue }) {
         }}
       >
         <FaEdit />
-      </button>
+      </button> */}
     </>
   )
 }

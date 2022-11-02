@@ -1,6 +1,7 @@
 import EditForm from './EditForm'
 import TodoText from './TodoText'
 import { useState } from 'react'
+import Button from 'react-bootstrap/Button'
 
 function TodoItem({
   todo,
@@ -27,13 +28,16 @@ function TodoItem({
           toggleTodoEditing={toggleTodoEditing}
         />
       )}
-      <button
+
+      <Button
+        variant="outline-warning"
+        className="m-1"
         onClick={() => {
           deleteTodo(todo.id)
         }}
       >
-        X
-      </button>
+        delete
+      </Button>
     </li>
   )
 }

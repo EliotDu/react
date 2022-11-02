@@ -1,22 +1,31 @@
 import { useState } from 'react'
 import './TodoApp.css'
-
+import Button from 'react-bootstrap/Button'
 import AddForm from './AddForm'
-import TodoList from './TodoList'
+import TodoList from './TodoList/index'
 
+const sample = [
+  {
+    id: 1,
+    text: '買牛奶',
+    completed: true,
+    editing: false,
+  },
+  { id: 2, text: '學react', completed: false, editing: false },
+]
 function TodoApp() {
-  // 編輯用
-  //const [inputEditingValue, setInputEditingValue] = useState('')
+  // 記錄所有的todos
+  const [todos, setTodos] = useState(sample)
 
-  const [todos, setTodos] = useState([
-    {
-      id: 1,
-      text: '買牛奶',
-      completed: true,
-      editing: false,
-    },
-    { id: 2, text: '學react', completed: false, editing: false },
-  ])
+  // 呈現用(經搜尋或過濾用)
+  //const [todosDisplay, setTodosDisplay] = useState(sample)
+
+  // 使用全app過濾條件 'all' | 'active' | 'completed'
+  const [condition, setCondition] = useState('all')
+
+  const [inputKeyword, setInputKeyword] = useState('')
+
+  const [searchKeyword, setSearchKeyWord] = useState('')
 
   const addTodo = (text) => {
     // id
@@ -81,8 +90,55 @@ function TodoApp() {
     <>
       <h1>Todo待辨事項</h1>
       <AddForm addTodo={addTodo} />
+      <br />
+      <input
+        type="text"
+        value={inputKeyword}
+        onChange={(e) => {
+          setInputKeyword(e.target.value)
+        }}
+      />
+      <Button
+        variant="outline-info"
+        onClick={() => {
+          setSearchKeyWord(inputKeyword)
+        }}
+      >
+        搜尋
+      </Button>
+      <hr />
+      <Button
+        variant="outline-info"
+        onClick={() => {
+          setCondition('all')
+          //setTodosDisplay(todos)
+        }}
+      >
+        全部
+      </Button>
+      <Button
+        variant="outline-info"
+        onClick={() => {
+          setCondition('active')
+          //setTodosDisplay(todos.filter((v, i) => !v.completed))
+        }}
+      >
+        進行中
+      </Button>
+      <Button
+        variant="outline-info"
+        onClick={() => {
+          setCondition('completed')
+          //setTodosDisplay(todos.filter((v, i) => v.completed))
+        }}
+      >
+        已完成
+      </Button>
+
       <TodoList
         todos={todos}
+        searchKeyword={searchKeyword}
+        condition={condition}
         toggleTodoCompleted={toggleTodoCompleted}
         toggleTodoEditing={toggleTodoEditing}
         updateTodo={updateTodo}
