@@ -16,6 +16,7 @@ import MultipleInput from './ex-1101-1/MultipleInput'
 import HTML5ValidForm from './ex-1102-1/HTML5ValidForm'
 import Lifecycle from './ex-1102-2/Lifecycle'
 import User from './ex-1102-3/User'
+import FileUploadSample from './ex-1102-4/FileUploadSample'
 export const exsamples = [
   {
     name: '1025-1 計數器',
@@ -106,5 +107,10 @@ export const exsamples = [
     name: '1102-3 從伺服器載入資料',
     path: './ex-1102-3/User.js',
     component: User,
+  },
+  {
+    name: '1102-4 檔案圖檔上傳',
+    path: './ex-1102-4/FileUploadSample.js',
+    component: FileUploadSample,
   },
 ]
