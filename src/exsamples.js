@@ -19,6 +19,8 @@ import User from './ex-1102-3/User'
 import FileUploadSample from './ex-1102-4/FileUploadSample'
 import ImageDemo from './ex-1103-1/ImageDemo'
 import UserDemo from './ex-1103-2/UserDemo'
+import UserPage from './ex-1104-1/UserPage'
+import BS5Test from './ex-1104-2/BS5Test'
 export const exsamples = [
   {
     name: '1025-1 計數器',
@@ -121,8 +123,18 @@ export const exsamples = [
     component: ImageDemo,
   },
   {
-    name: '1103-2 從伺服器載入資料，搜尋&分頁',
+    name: '1103-2 從伺服器載入資料，搜尋',
     path: './ex-1103-2/UserDemo.js',
     component: UserDemo,
+  },
+  {
+    name: '1104-1 從伺服器載入資料，分頁',
+    path: './ex-1104-1/UserPage.js',
+    component: UserPage,
+  },
+  {
+    name: '1104-2 Bootstrap5測試',
+    path: './ex-1104-2/BS5Test.js',
+    component: BS5Test,
   },
 ]
