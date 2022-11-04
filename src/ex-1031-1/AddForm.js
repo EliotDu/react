@@ -1,3 +1,4 @@
+//新增待辦事項功能
 import { useState } from 'react'
 
 function AddForm({ addTodo }) {
@@ -10,6 +11,7 @@ function AddForm({ addTodo }) {
       <input
         type="text"
         value={inputValue}
+        placeholder="add todo..."
         onChange={(e) => {
           setInputValue(e.target.value)
         }}

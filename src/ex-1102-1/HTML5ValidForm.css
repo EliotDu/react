@@ -2,7 +2,7 @@
   position: relative;
 
 }
-img,
+/* img,
 svg {
   vertical-align: middle;
   margin-left:5px ;
@@ -12,7 +12,7 @@ svg {
   position: absolute;
   left: 180px;
   top:145px;
-}
+} */
 small{
   margin-left: 5px;
   color:red

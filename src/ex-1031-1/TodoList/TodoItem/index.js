@@ -14,6 +14,7 @@ function TodoItem({
     <li className={todo.completed ? 'completed' : 'not-completed'}>
       <input
         type="checkbox"
+        style={{ margin: '0 5px' }}
         checked={todo.completed}
         onChange={() => {
           toggleTodoCompleted(todo.id)
@@ -31,7 +32,7 @@ function TodoItem({
 
       <Button
         variant="outline-warning"
-        className="m-1"
+        className="m-1 p-1"
         onClick={() => {
           deleteTodo(todo.id)
         }}

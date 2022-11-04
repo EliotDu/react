@@ -1,6 +1,5 @@
 import TodoItem from './TodoItem'
 
-import { FaTrash } from 'react-icons/fa'
 function TodoList({
   todos,
   toggleTodoCompleted,

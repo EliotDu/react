@@ -99,6 +99,7 @@ function TodoApp() {
         }}
       />
       <Button
+        style={{ margin: '8px' }}
         variant="outline-info"
         onClick={() => {
           setSearchKeyWord(inputKeyword)
@@ -117,6 +118,7 @@ function TodoApp() {
         全部
       </Button>
       <Button
+        style={{ margin: '5px' }}
         variant="outline-info"
         onClick={() => {
           setCondition('active')
